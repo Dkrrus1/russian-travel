@@ -1,0 +1,11 @@
+.place{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 48px 40px;
+}
+
+@media (max-width:768px){
+  .place{
+    grid-gap: calc(32px + (48 - 32) * ( (100vw - 320px) / ( 768 - 320) )) calc(0px + (40 - 0) * ( (100vw - 320px) / ( 768 - 320) ));
+  }
+}

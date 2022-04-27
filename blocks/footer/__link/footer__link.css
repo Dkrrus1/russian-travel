@@ -1,0 +1,17 @@
+.footer__link{
+  text-decoration: none;
+  color: white;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.12;
+  margin-right: 16px;
+}
+
+@media (max-width:600px) {
+  .footer__link{
+    font-size: calc(24px - (24 - 16) * ( (100vw - 320px) / ( 660 - 320) ));
+    margin-right: 0;
+    margin-bottom: 32px;
+    line-height: 1;
+  }
+}
