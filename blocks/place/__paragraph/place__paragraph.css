@@ -1,0 +1,16 @@
+.place__paragraph{
+  max-width: 100%;
+  font-size: 18px;
+  line-height: 1.63;
+  margin: 0 0 26px 0;
+}
+
+.place__paragraph:last-of-type{
+margin: 0;
+}
+
+@media (max-width:768px) {
+  .place__paragraph{
+    font-size: calc(14px + (18 - 14) * ( (100vw - 320px) / ( 768 - 320) ));
+  }
+}
