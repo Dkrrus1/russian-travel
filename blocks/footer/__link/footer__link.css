@@ -11,6 +11,10 @@
   margin-right: 0;
 }
 
+.footer__link:hover{
+  opacity: 0.8;
+}
+
 @media (max-width:600px) {
   .footer__link{
     font-size: calc(24px - (24 - 16) * ( (100vw - 320px) / ( 660 - 320) ));
