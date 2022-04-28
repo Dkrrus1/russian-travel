@@ -14,7 +14,7 @@
 @media (min-width:768px) and (max-width:1024px) {
   .place{
     gap: 48px calc(28px + (32 - 28) * ( (100vw - 768px) / ( 1024 - 768) ));
-    grid-template-columns: repeat(auto-fit, minmax(320px, calc(340px + (440 - 340) * ( (100vw - 768px) / ( 1024 - 768) ))));
+    grid-template-columns: repeat(auto-fit, minmax(320px, calc(340px + (100) * ( (100vw - 768px) / (256)))));
   }
 }
 
