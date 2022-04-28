@@ -14,7 +14,7 @@
              0
              calc(0px + (24 - 16) * ( (100vw - 320px) / ( 768 - 320) ));
     grid-template-columns: repeat(auto-fit, minmax(calc(320px + (720 - 320) * ( (100vw - 320px) / ( 768 - 320) )), 1fr));
-    gap: 50px;
+    gap: calc(32px + (48 - 32) * ( (100vw - 320px) / ( 768 - 320) )) calc(0 + (40 - 0) * ( (100vw - 320px) / ( 768 - 320) ));
   }
 }
 

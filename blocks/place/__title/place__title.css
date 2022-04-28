@@ -1,14 +1,17 @@
 .place__title{
   font-size: 72px;
   line-height: 1.06;
-  margin: 0 16px;
+  margin: 0;
   max-width: 460px;
+  font-weight: 900;
 }
 
 @media (max-width:768px){
   .place__title{
     font-size: calc(32px + (42 - 32) * ( (100vw - 320px) / ( 768 - 320) ));
     line-height: 1.09;
+    margin: 0 calc(16px - (32 - 16) * ( (100vw - 320px) / ( 768 - 320) ));
+    max-width: 330px;
   }
 }
 

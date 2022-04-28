@@ -1,11 +1,20 @@
 .place{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 48px 40px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 460px));
+  gap: 48px 40px;
 }
 
 @media (max-width:768px){
   .place{
-    grid-gap: calc(32px + (48 - 32) * ( (100vw - 320px) / ( 768 - 320) )) calc(0px + (40 - 0) * ( (100vw - 320px) / ( 768 - 320) ));
+    gap: calc(32px + (48 - 32) * ( (100vw - 320px) / ( 768 - 320) )) calc(0px + (28 - 0) * ( (100vw - 320px) / ( 768 - 320) ));
+    grid-template-columns: repeat(auto-fit, minmax(320px, calc(320px + (340 - 320) * ( (100vw - 320px) / ( 768 - 320) ))));
   }
 }
+
+@media (min-width:768px) and (max-width:1024px) {
+  .place{
+    gap: 48px calc(28px + (32 - 28) * ( (100vw - 768px) / ( 1024 - 768) ));
+    grid-template-columns: repeat(auto-fit, minmax(320px, calc(340px + (440 - 340) * ( (100vw - 768px) / ( 1024 - 768) ))));
+  }
+}
+

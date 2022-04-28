@@ -11,3 +11,9 @@
     margin: calc(64px + (88 - 64) * ( (100vw - 320px) / ( 768 - 320) )) 0;
   }
 }
+
+@media (min-width:768px) and (max-width:1024px) {
+  .cover{
+    margin: calc(88px + (92 - 88) * ( (100vw - 768px) / ( 1024 - 768) )) 0;
+  }
+}

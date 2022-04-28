@@ -6,11 +6,12 @@
   color: #ffffff;
   text-align: center;
   z-index: 2;
-  margin-top: 32px;
+  margin: 0 16px;
 }
 
 @media (max-width:768px) {
   .cover__subtitle{
+    max-width: calc(258px + (360 - 258) * ( (100vw - 320px) / ( 768 - 320) ));
     font-size: calc(14px + (18 - 14) * ( (100vw - 320px) / ( 768 - 320) ));
     line-height: 1.14;
   }

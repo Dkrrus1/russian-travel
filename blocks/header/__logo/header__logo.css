@@ -2,8 +2,8 @@
   max-height: 52px;
 }
 
-@media (max-width: 766px){
+@media (max-width: 768px){
   .header__logo{
-    max-height: calc(42px + (54 - 42) * ( (100vw - 320px) / ( 766 - 320) ));
+    max-height: calc(42px + (52 - 42) * ( (100vw - 320px) / ( 768 - 320) ));
   }
 }
