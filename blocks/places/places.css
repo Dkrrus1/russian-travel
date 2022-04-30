@@ -34,6 +34,6 @@
              calc(48px + (148 - 48) * ( (100vw - 1024px) / ( 1280 - 1024) ))
              0
              calc(48px + (148 - 48) * ( (100vw - 1024px) / ( 1280 - 1024) ));
-    /* grid-template-columns: repeat(auto-fit, minmax(calc(928px + (984 - 928) * ( (100vw - 1024px) / ( 1280 - 1024) )), 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(calc(928px + (984 - 928) * ( (100vw - 1024px) / ( 1280 - 1024) )), 1fr));
   }
 }
