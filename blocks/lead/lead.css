@@ -6,6 +6,15 @@
   margin: 48px 148px 0 148px;
 }
 
+@media (max-width:768px) {
+  .lead{
+    margin: 48px 0 0 0;
+            /* calc((48) * ( (100vw - 320px) / ( 768 - 320) ))
+            0
+            calc((48) * ( (100vw - 320px) / ( 768 - 320) )); */
+  }
+}
+
 @media (min-width:768px) and (max-width:1024px) {
   .lead{
     margin: 48px
